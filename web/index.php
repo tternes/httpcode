@@ -10,7 +10,8 @@ dispatch('/', 'hello');
 function hello()
 {
 	// TODO: proper landing page
-	header("Location: http://th.adde.us/2013/08/http-status-codes/");
+	// header("Location: http://th.adde.us/2013/08/http-status-codes/");
+	header("Location: /200");
     return '';
 }
 
@@ -20,6 +21,13 @@ function about()
 	// TODO: proper about page
 	header("Location: http://th.adde.us/2013/08/http-status-codes/");
     return '';
+}
+
+dispatch('/go', 'redirectToStatusCode');
+function redirectToStatusCode()
+{
+	$statusCode = $_GET['code'];
+	header("Location: /" . $statusCode);
 }
 
 dispatch('/:status', 'renderHtmlStatusCode');
@@ -32,10 +40,11 @@ function renderHtmlStatusCode()
 	$user_agent = $_SERVER['HTTP_USER_AGENT'];
 	$command_line_agents = array(
 		"curl" => 'curl',
+		"Wget" => 'curl',
 		"HTTP Client" => 'curl',
 		"HTTP%20Client" => 'curl'
 	);
-	
+
 	//print("agent: " . $user_agent . "\n");
 	foreach($command_line_agents as $agent => $agent_format)
 	{

@@ -1,5 +1,7 @@
 <?php
 
+$pageTemplate = "";
+loadHtmlTemplate();
 parseRfcHtmlDocument("rfc2616-sec10.html");
 
 // -------------------------------------------------------------------------
@@ -68,19 +70,19 @@ function parseRfcHtmlDocument($filename)
 
 function generateHtmlPage($status)
 {
+	global $pageTemplate;
+
 	$filename = sprintf("./web/pages/%d.html.php", $status["status"]);
 	$fp = fopen($filename, "w");
+
+	$contents = $pageTemplate;
+	$contents = str_replace(__PAGE_TITLE_TEXT__, $status["status"] . ": " . $status["description"], $contents); // 200: OK
+	$contents = str_replace(__PAGE_HEADING_TEXT__, $status["status"] . ": " . $status["description"], $contents); // 200: OK
+	$contents = str_replace(__PAGE_LEAD_TEXT__, "", $contents);
+	$contents = str_replace(__PAGE_PRE_TEXT__, $status["explanation"], $contents);
+	$contents = str_replace(__PAGE_STATUS_CODE__, $status["status"], $contents);
+	fwrite($fp, $contents);
 	
-	fwrite($fp, sprintf("<html><head><title>HTTP Code: %d</title>", $status["status"]));
-	// bootstrap.min.css
-	// bootstrap.min.js
-	fwrite($fp, "<link href=\"/lib/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\" media=\"screen\">");
-	fwrite($fp, "</head><body>");
-	fwrite($fp, sprintf("<h1>%d: %s</h1>", $status["status"], $status["description"]));
-	fwrite($fp, sprintf("<p><pre>%s</pre></p>", $status["explanation"]));
-	// <script src="http://code.jquery.com/jquery-latest.js"></script>
-    // <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-	fwrite($fp, "</body></html>");
 	fclose($fp);
 }
 
@@ -119,5 +121,10 @@ function generateLimonadeRoutes($statuses)
 	}
 	fwrite($fp, ");\n\n");
 	fclose($fp);
+}
 
+function loadHtmlTemplate()
+{
+	global $pageTemplate;
+	$pageTemplate = file_get_contents("./template_html.txt");
 }
