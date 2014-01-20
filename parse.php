@@ -19,7 +19,7 @@ function parseRfcHtmlDocument($filename)
 		$explanation = "";
 		
 		list($major, $minor, $rev, $status, $description) = sscanf($items->item($i)->nodeValue, "%d.%d.%d %d %[^$]s");
-		
+
 		// If we fail to parse, it's probably a section thing
 		if($status == 0)
 		{
@@ -48,7 +48,10 @@ function parseRfcHtmlDocument($filename)
 				$p = null;
 		}
 	
-		$result = array("status" => $status, "description" => $description, "explanation" => $explanation);
+		// tidy things up
+		$explanation = str_replace("   ", "", $explanation);
+		
+		$result = array("status" => $status, "description" => trim($description), "explanation" => trim($explanation));
 		$statuses[] = $result;
 	}
 

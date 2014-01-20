@@ -30,14 +30,14 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>__PAGE_HEADING_TEXT__</h1>
 						<p class="lead">__PAGE_LEAD_TEXT__</p>
-						<pre>__PAGE_PRE_TEXT__</pre>
+						<pre><small>__PAGE_PRE_TEXT__</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">
