@@ -30,19 +30,17 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>417: Expectation Failed</h1>
 						<p class="lead"></p>
-						<pre>
-   The expectation given in an Expect request-header field (see section
-   14.20) could not be met by this server, or, if the server is a proxy,
-   the server has unambiguous evidence that the request could not be met
-   by the next-hop server.
-</pre>
+						<pre><small>The expectation given in an Expect request-header field (see section
+14.20) could not be met by this server, or, if the server is a proxy,
+the server has unambiguous evidence that the request could not be met
+by the next-hop server.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

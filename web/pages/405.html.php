@@ -30,19 +30,17 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>405: Method Not Allowed</h1>
 						<p class="lead"></p>
-						<pre>
-   The method specified in the Request-Line is not allowed for the
-   resource identified by the Request-URI. The response MUST include an
-   Allow header containing a list of valid methods for the requested
-   resource.
-</pre>
+						<pre><small>The method specified in the Request-Line is not allowed for the
+resource identified by the Request-URI. The response MUST include an
+Allow header containing a list of valid methods for the requested
+resource.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

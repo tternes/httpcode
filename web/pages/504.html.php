@@ -30,21 +30,19 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>504: Gateway Timeout</h1>
 						<p class="lead"></p>
-						<pre>
-   The server, while acting as a gateway or proxy, did not receive a
-   timely response from the upstream server specified by the URI (e.g.
-   HTTP, FTP, LDAP) or some other auxiliary server (e.g. DNS) it needed
-   to access in attempting to complete the request.
-      Note: Note to implementors: some deployed proxies are known to
-      return 400 or 500 when DNS lookups time out.
-</pre>
+						<pre><small>The server, while acting as a gateway or proxy, did not receive a
+timely response from the upstream server specified by the URI (e.g.
+HTTP, FTP, LDAP) or some other auxiliary server (e.g. DNS) it needed
+to access in attempting to complete the request.
+Note: Note to implementors: some deployed proxies are known to
+return 400 or 500 when DNS lookups time out.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

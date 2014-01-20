@@ -30,18 +30,16 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>502: Bad Gateway</h1>
 						<p class="lead"></p>
-						<pre>
-   The server, while acting as a gateway or proxy, received an invalid
-   response from the upstream server it accessed in attempting to
-   fulfill the request.
-</pre>
+						<pre><small>The server, while acting as a gateway or proxy, received an invalid
+response from the upstream server it accessed in attempting to
+fulfill the request.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

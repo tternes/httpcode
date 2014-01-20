@@ -30,28 +30,26 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>416: Requested Range Not Satisfiable</h1>
 						<p class="lead"></p>
-						<pre>
-   A server SHOULD return a response with this status code if a request
-   included a Range request-header field (section 14.35), and none of
-   the range-specifier values in this field overlap the current extent
-   of the selected resource, and the request did not include an If-Range
-   request-header field. (For byte-ranges, this means that the first-
-   byte-pos of all of the byte-range-spec values were greater than the
-   current length of the selected resource.)
+						<pre><small>A server SHOULD return a response with this status code if a request
+included a Range request-header field (section 14.35), and none of
+the range-specifier values in this field overlap the current extent
+of the selected resource, and the request did not include an If-Range
+request-header field. (For byte-ranges, this means that the first-
+byte-pos of all of the byte-range-spec values were greater than the
+current length of the selected resource.)
 
-   When this status code is returned for a byte-range request, the
-   response SHOULD include a Content-Range entity-header field
-   specifying the current length of the selected resource (see section
-   14.16). This response MUST NOT use the multipart/byteranges content-
-   type.
-</pre>
+When this status code is returned for a byte-range request, the
+response SHOULD include a Content-Range entity-header field
+specifying the current length of the selected resource (see section
+14.16). This response MUST NOT use the multipart/byteranges content-
+type.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

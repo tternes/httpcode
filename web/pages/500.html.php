@@ -30,17 +30,15 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>500: Internal Server Error</h1>
 						<p class="lead"></p>
-						<pre>
-   The server encountered an unexpected condition which prevented it
-   from fulfilling the request.
-</pre>
+						<pre><small>The server encountered an unexpected condition which prevented it
+from fulfilling the request.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

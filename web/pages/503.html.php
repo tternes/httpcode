@@ -30,24 +30,22 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>503: Service Unavailable</h1>
 						<p class="lead"></p>
-						<pre>
-   The server is currently unable to handle the request due to a
-   temporary overloading or maintenance of the server. The implication
-   is that this is a temporary condition which will be alleviated after
-   some delay. If known, the length of the delay MAY be indicated in a
-   Retry-After header. If no Retry-After is given, the client SHOULD
-   handle the response as it would for a 500 response.
-      Note: The existence of the 503 status code does not imply that a
-      server must use it when becoming overloaded. Some servers may wish
-      to simply refuse the connection.
-</pre>
+						<pre><small>The server is currently unable to handle the request due to a
+temporary overloading or maintenance of the server. The implication
+is that this is a temporary condition which will be alleviated after
+some delay. If known, the length of the delay MAY be indicated in a
+Retry-After header. If no Retry-After is given, the client SHOULD
+handle the response as it would for a 500 response.
+Note: The existence of the 503 status code does not imply that a
+server must use it when becoming overloaded. Some servers may wish
+to simply refuse the connection.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

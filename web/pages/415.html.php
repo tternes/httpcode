@@ -30,18 +30,16 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>415: Unsupported Media Type</h1>
 						<p class="lead"></p>
-						<pre>
-   The server is refusing to service the request because the entity of
-   the request is in a format not supported by the requested resource
-   for the requested method.
-</pre>
+						<pre><small>The server is refusing to service the request because the entity of
+the request is in a format not supported by the requested resource
+for the requested method.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

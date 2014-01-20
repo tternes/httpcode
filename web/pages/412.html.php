@@ -30,20 +30,18 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>412: Precondition Failed</h1>
 						<p class="lead"></p>
-						<pre>
-   The precondition given in one or more of the request-header fields
-   evaluated to false when it was tested on the server. This response
-   code allows the client to place preconditions on the current resource
-   metainformation (header field data) and thus prevent the requested
-   method from being applied to a resource other than the one intended.
-</pre>
+						<pre><small>The precondition given in one or more of the request-header fields
+evaluated to false when it was tested on the server. This response
+code allows the client to place preconditions on the current resource
+metainformation (header field data) and thus prevent the requested
+method from being applied to a resource other than the one intended.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

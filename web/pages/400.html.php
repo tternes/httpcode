@@ -30,18 +30,16 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>400: Bad Request</h1>
 						<p class="lead"></p>
-						<pre>
-   The request could not be understood by the server due to malformed
-   syntax. The client SHOULD NOT repeat the request without
-   modifications.
-</pre>
+						<pre><small>The request could not be understood by the server due to malformed
+syntax. The client SHOULD NOT repeat the request without
+modifications.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

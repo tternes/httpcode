@@ -30,19 +30,17 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>501: Not Implemented</h1>
 						<p class="lead"></p>
-						<pre>
-   The server does not support the functionality required to fulfill the
-   request. This is the appropriate response when the server does not
-   recognize the request method and is not capable of supporting it for
-   any resource.
-</pre>
+						<pre><small>The server does not support the functionality required to fulfill the
+request. This is the appropriate response when the server does not
+recognize the request method and is not capable of supporting it for
+any resource.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

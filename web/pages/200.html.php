@@ -30,28 +30,26 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>200: OK</h1>
 						<p class="lead"></p>
-						<pre>
-   The request has succeeded. The information returned with the response
-   is dependent on the method used in the request, for example:
+						<pre><small>The request has succeeded. The information returned with the response
+is dependent on the method used in the request, for example:
 
-   GET    an entity corresponding to the requested resource is sent in
-          the response;
+GET an entity corresponding to the requested resource is sent in
+ the response;
 
-   HEAD   the entity-header fields corresponding to the requested
-          resource are sent in the response without any message-body;
+HEADthe entity-header fields corresponding to the requested
+ resource are sent in the response without any message-body;
 
-   POST   an entity describing or containing the result of the action;
+POSTan entity describing or containing the result of the action;
 
-   TRACE  an entity containing the request message as received by the
-          end server.
-</pre>
+TRACE  an entity containing the request message as received by the
+ end server.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

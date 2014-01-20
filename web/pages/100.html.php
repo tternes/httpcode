@@ -30,23 +30,21 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>100: Continue</h1>
 						<p class="lead"></p>
-						<pre>
-   The client SHOULD continue with its request. This interim response is
-   used to inform the client that the initial part of the request has
-   been received and has not yet been rejected by the server. The client
-   SHOULD continue by sending the remainder of the request or, if the
-   request has already been completed, ignore this response. The server
-   MUST send a final response after the request has been completed. See
-   section 8.2.3 for detailed discussion of the use and handling of this
-   status code.
-</pre>
+						<pre><small>The client SHOULD continue with its request. This interim response is
+used to inform the client that the initial part of the request has
+been received and has not yet been rejected by the server. The client
+SHOULD continue by sending the remainder of the request or, if the
+request has already been completed, ignore this response. The server
+MUST send a final response after the request has been completed. See
+section 8.2.3 for detailed discussion of the use and handling of this
+status code.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

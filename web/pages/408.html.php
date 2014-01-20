@@ -30,18 +30,16 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>408: Request Timeout</h1>
 						<p class="lead"></p>
-						<pre>
-   The client did not produce a request within the time that the server
-   was prepared to wait. The client MAY repeat the request without
-   modifications at any later time.
-</pre>
+						<pre><small>The client did not produce a request within the time that the server
+was prepared to wait. The client MAY repeat the request without
+modifications at any later time.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

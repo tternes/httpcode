@@ -30,19 +30,17 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>411: Length Required</h1>
 						<p class="lead"></p>
-						<pre>
-   The server refuses to accept the request without a defined Content-
-   Length. The client MAY repeat the request if it adds a valid
-   Content-Length header field containing the length of the message-body
-   in the request message.
-</pre>
+						<pre><small>The server refuses to accept the request without a defined Content-
+Length. The client MAY repeat the request if it adds a valid
+Content-Length header field containing the length of the message-body
+in the request message.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

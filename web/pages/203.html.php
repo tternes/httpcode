@@ -30,23 +30,21 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>203: Non-Authoritative Information</h1>
 						<p class="lead"></p>
-						<pre>
-   The returned metainformation in the entity-header is not the
-   definitive set as available from the origin server, but is gathered
-   from a local or a third-party copy. The set presented MAY be a subset
-   or superset of the original version. For example, including local
-   annotation information about the resource might result in a superset
-   of the metainformation known by the origin server. Use of this
-   response code is not required and is only appropriate when the
-   response would otherwise be 200 (OK).
-</pre>
+						<pre><small>The returned metainformation in the entity-header is not the
+definitive set as available from the origin server, but is gathered
+from a local or a third-party copy. The set presented MAY be a subset
+or superset of the original version. For example, including local
+annotation information about the resource might result in a superset
+of the metainformation known by the origin server. Use of this
+response code is not required and is only appropriate when the
+response would otherwise be 200 (OK).</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

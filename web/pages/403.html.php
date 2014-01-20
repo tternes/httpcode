@@ -30,22 +30,20 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>403: Forbidden</h1>
 						<p class="lead"></p>
-						<pre>
-   The server understood the request, but is refusing to fulfill it.
-   Authorization will not help and the request SHOULD NOT be repeated.
-   If the request method was not HEAD and the server wishes to make
-   public why the request has not been fulfilled, it SHOULD describe the
-   reason for the refusal in the entity.  If the server does not wish to
-   make this information available to the client, the status code 404
-   (Not Found) can be used instead.
-</pre>
+						<pre><small>The server understood the request, but is refusing to fulfill it.
+Authorization will not help and the request SHOULD NOT be repeated.
+If the request method was not HEAD and the server wishes to make
+public why the request has not been fulfilled, it SHOULD describe the
+reason for the refusal in the entity.  If the server does not wish to
+make this information available to the client, the status code 404
+(Not Found) can be used instead.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

@@ -30,36 +30,34 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>406: Not Acceptable</h1>
 						<p class="lead"></p>
-						<pre>
-   The resource identified by the request is only capable of generating
-   response entities which have content characteristics not acceptable
-   according to the accept headers sent in the request.
+						<pre><small>The resource identified by the request is only capable of generating
+response entities which have content characteristics not acceptable
+according to the accept headers sent in the request.
 
-   Unless it was a HEAD request, the response SHOULD include an entity
-   containing a list of available entity characteristics and location(s)
-   from which the user or user agent can choose the one most
-   appropriate. The entity format is specified by the media type given
-   in the Content-Type header field. Depending upon the format and the
-   capabilities of the user agent, selection of the most appropriate
-   choice MAY be performed automatically. However, this specification
-   does not define any standard for such automatic selection.
-      Note: HTTP/1.1 servers are allowed to return responses which are
-      not acceptable according to the accept headers sent in the
-      request. In some cases, this may even be preferable to sending a
-      406 response. User agents are encouraged to inspect the headers of
-      an incoming response to determine if it is acceptable.
+Unless it was a HEAD request, the response SHOULD include an entity
+containing a list of available entity characteristics and location(s)
+from which the user or user agent can choose the one most
+appropriate. The entity format is specified by the media type given
+in the Content-Type header field. Depending upon the format and the
+capabilities of the user agent, selection of the most appropriate
+choice MAY be performed automatically. However, this specification
+does not define any standard for such automatic selection.
+Note: HTTP/1.1 servers are allowed to return responses which are
+not acceptable according to the accept headers sent in the
+request. In some cases, this may even be preferable to sending a
+406 response. User agents are encouraged to inspect the headers of
+an incoming response to determine if it is acceptable.
 
-   If the response could be unacceptable, a user agent SHOULD
-   temporarily stop receipt of more data and query the user for a
-   decision on further actions.
-</pre>
+If the response could be unacceptable, a user agent SHOULD
+temporarily stop receipt of more data and query the user for a
+decision on further actions.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

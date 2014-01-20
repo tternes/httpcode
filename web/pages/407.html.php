@@ -30,23 +30,21 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>407: Proxy Authentication Required</h1>
 						<p class="lead"></p>
-						<pre>
-   This code is similar to 401 (Unauthorized), but indicates that the
-   client must first authenticate itself with the proxy. The proxy MUST
-   return a Proxy-Authenticate header field (section 14.33) containing a
-   challenge applicable to the proxy for the requested resource. The
-   client MAY repeat the request with a suitable Proxy-Authorization
-   header field (section 14.34). HTTP access authentication is explained
-   in "HTTP Authentication: Basic and Digest Access Authentication"
-   [43].
-</pre>
+						<pre><small>This code is similar to 401 (Unauthorized), but indicates that the
+client must first authenticate itself with the proxy. The proxy MUST
+return a Proxy-Authenticate header field (section 14.33) containing a
+challenge applicable to the proxy for the requested resource. The
+client MAY repeat the request with a suitable Proxy-Authorization
+header field (section 14.34). HTTP access authentication is explained
+in "HTTP Authentication: Basic and Digest Access Authentication"
+[43].</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">

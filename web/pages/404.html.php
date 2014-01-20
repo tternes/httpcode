@@ -30,23 +30,21 @@
 			<div class="page-header" id="banner">
 
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-sm-7">
 						<h1>404: Not Found</h1>
 						<p class="lead"></p>
-						<pre>
-   The server has not found anything matching the Request-URI. No
-   indication is given of whether the condition is temporary or
-   permanent. The 410 (Gone) status code SHOULD be used if the server
-   knows, through some internally configurable mechanism, that an old
-   resource is permanently unavailable and has no forwarding address.
-   This status code is commonly used when the server does not wish to
-   reveal exactly why the request has been refused, or when no other
-   response is applicable.
-</pre>
+						<pre><small>The server has not found anything matching the Request-URI. No
+indication is given of whether the condition is temporary or
+permanent. The 410 (Gone) status code SHOULD be used if the server
+knows, through some internally configurable mechanism, that an old
+resource is permanently unavailable and has no forwarding address.
+This status code is commonly used when the server does not wish to
+reveal exactly why the request has been refused, or when no other
+response is applicable.</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
-					<div class="col-lg-5">
+					<div class="col-sm-5">
 						<h3>Quick Reference</h3>
 						<div class="panel panel-primary">
 							<div class="panel-heading">
