@@ -67,11 +67,10 @@ method from being applied to a resource other than the one intended.</small></pr
 					</div>
 				</div>
 			</div>
-			
-			<div class="row">
-				<div class="col-lg-10">
-					<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
-				</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-10">
+				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>
