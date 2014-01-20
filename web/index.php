@@ -9,10 +9,7 @@ require_once './pages/limonade_routes.php';
 dispatch('/', 'hello');
 function hello()
 {
-	// TODO: proper landing page
-	// header("Location: http://th.adde.us/2013/08/http-status-codes/");
-	header("Location: /200");
-    return '';
+	return html("home.php");
 }
 
 dispatch('/about', 'about');
@@ -20,6 +17,7 @@ function about()
 {
 	// TODO: proper about page
 	header("Location: http://th.adde.us/2013/08/http-status-codes/");
+	// header("Location: /");
     return '';
 }
 
@@ -62,6 +60,7 @@ function renderHtmlStatusCode()
 	{
 		// Valid - render
 		$templateName = sprintf("%d.%s.php", $statusCode, $format);
+		// return $templateName;
 		return html($templateName);
 	}
 	else
