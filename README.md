@@ -41,7 +41,7 @@ I currently host a live copy of the site at [httpcode.info](httpcode.info). If y
 
 	The MIT License (MIT)
 	
-	Copyright (c) 2013 Thaddeus Ternes
+	Copyright (c) 2014 Thaddeus Ternes
 	
 	Permission is hereby granted, free of charge, to any person obtaining a copy of
 	this software and associated documentation files (the "Software"), to deal in
