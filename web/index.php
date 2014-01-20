@@ -66,8 +66,7 @@ function renderHtmlStatusCode()
 	else
 	{
 		// Invalid - error
-		// TODO...
-		return "error! invalid status requested, not in known list";
+		return html("notfound.php");
 	}
 
 }
