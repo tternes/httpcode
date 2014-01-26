@@ -75,15 +75,26 @@ function generateHtmlPage($status)
 {
 	global $pageTemplate;
 
+	$statusCode = $status["status"];
 	$filename = sprintf("./web/pages/%d.html.php", $status["status"]);
 	$fp = fopen($filename, "w");
 
 	$contents = $pageTemplate;
+
+	$externalSponsorFile = "../sponsor.php";
+	if(file_exists($externalSponsorFile))
+		require_once($externalSponsorFile);
+	else
+		require_once("sponsor.php");
+
+	$sponsor = sponsorDetails();	
 	$contents = str_replace(__PAGE_TITLE_TEXT__, $status["status"] . ": " . $status["description"], $contents); // 200: OK
 	$contents = str_replace(__PAGE_HEADING_TEXT__, $status["status"] . ": " . $status["description"], $contents); // 200: OK
-	$contents = str_replace(__PAGE_LEAD_TEXT__, "", $contents);
 	$contents = str_replace(__PAGE_PRE_TEXT__, $status["explanation"], $contents);
 	$contents = str_replace(__PAGE_STATUS_CODE__, $status["status"], $contents);
+	$contents = str_replace(__PAGE_LEAD_TEXT__, $sponsor[$statusCode], $contents);
+	$contents = str_replace(__PAGE_SPONSOR_TITLE__, $sponsor["title"], $contents);
+	$contents = str_replace(__PAGE_SPONSOR_URL__, $sponsor["url"], $contents);
 	fwrite($fp, $contents);
 	
 	fclose($fp);

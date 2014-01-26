@@ -21,7 +21,7 @@
 					</form>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="https://github.com/tternes/httpcode">Fork on GitHub</a></li>
-						<li><a href="http://www.bluetoo.co" target="_blank">Sponsored by Bluetoo</a></li>
+						<li><a href="__PAGE_SPONSOR_URL__" target="_blank">__PAGE_SPONSOR_TITLE__</a></li>
 					</ul>
 				</div>
 			</div>
