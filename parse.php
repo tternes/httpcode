@@ -48,10 +48,10 @@ function parseRfcHtmlDocument($filename)
 				$p = null;
 		}
 	
-		// tidy things up
-		$explanation = str_replace("   ", "", $explanation);
+		// tidy things up - removed for now, causes formatting issues on 200
+		// $explanation = str_replace("   ", "", $explanation);
 		
-		$result = array("status" => $status, "description" => trim($description), "explanation" => trim($explanation));
+		$result = array("status" => $status, "description" => trim($description), "explanation" => $explanation);
 		$statuses[] = $result;
 	}
 
