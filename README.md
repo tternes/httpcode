@@ -2,8 +2,6 @@
 
 [httpcode.info](http://httpcode.info) is a project born out of necessity - I [wanted a quick and easy way](http://th.adde.us/2013/08/http-status-codes/) to look up HTTP response codes.
 
-This project was quickly hacked together - it's not going to win design awards, but is functional and incredibly useful.
-
 ## Usage ##
 	   
 	$ http 404
@@ -24,7 +22,7 @@ Please check out my [blog post](http://th.adde.us/2013/08/http-status-codes/) fo
 
 The web application (contained within the `web` directory), is a simple [Limonade](https://github.com/sofadesign/limonade) app. The contents are served from static files, which are built one-time by running the scraper, which is described below.
 
-## Scraping the RFC ##
+## Building ##
 
 The contents of the site are built by scraping the [HTTP RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10). Update the `rfc2616-sec10.html` document to a new version, and then run
 
@@ -32,9 +30,16 @@ The contents of the site are built by scraping the [HTTP RFC 2616](http://www.w3
 	
 to generate new content in `web/pages`.
 
+[Extra statuses](http://httpcode.info/418) are included in the `rfc-additions.html` file. For simplicity, they conform to the same formatting style as the `rfc2616-sec10.html` file.
+
+
+## Sponsor ##
+
+Thanks for [Runscope](http://www.runscope.com) for sponsoring the site. Be sure to check out their [200: OK](https://www.runscope.com/ts) promo.
+
 ## Hosting ##
 
-I currently host a live copy of the site at [httpcode.info](httpcode.info). If you appreciate the site, please consider checking out my [other software](http://www.bluetoo.co).
+I currently host the site at [httpcode.info](httpcode.info). If you appreciate the site, please consider checking out my [other software](http://www.bluetoo.co).
 
 ## Licence ##
  
