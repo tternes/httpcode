@@ -33,10 +33,12 @@
 					<div class="col-sm-7">
 						<h1>411: Length Required</h1>
 						<p class="lead"></p>
-						<pre><small>The server refuses to accept the request without a defined Content-
-Length. The client MAY repeat the request if it adds a valid
-Content-Length header field containing the length of the message-body
-in the request message.</small></pre>
+						<pre><small>
+   The server refuses to accept the request without a defined Content-
+   Length. The client MAY repeat the request if it adds a valid
+   Content-Length header field containing the length of the message-body
+   in the request message.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -69,7 +71,7 @@ in the request message.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

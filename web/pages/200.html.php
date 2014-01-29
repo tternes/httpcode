@@ -33,19 +33,21 @@
 					<div class="col-sm-7">
 						<h1>200: OK</h1>
 						<p class="lead"></p>
-						<pre><small>The request has succeeded. The information returned with the response
-is dependent on the method used in the request, for example:
+						<pre><small>
+   The request has succeeded. The information returned with the response
+   is dependent on the method used in the request, for example:
 
-GET an entity corresponding to the requested resource is sent in
- the response;
+   GET    an entity corresponding to the requested resource is sent in
+          the response;
 
-HEADthe entity-header fields corresponding to the requested
- resource are sent in the response without any message-body;
+   HEAD   the entity-header fields corresponding to the requested
+          resource are sent in the response without any message-body;
 
-POSTan entity describing or containing the result of the action;
+   POST   an entity describing or containing the result of the action;
 
-TRACE  an entity containing the request message as received by the
- end server.</small></pre>
+   TRACE  an entity containing the request message as received by the
+          end server.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -78,7 +80,7 @@ TRACE  an entity containing the request message as received by the
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

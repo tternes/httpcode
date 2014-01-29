@@ -33,23 +33,25 @@
 					<div class="col-sm-7">
 						<h1>410: Gone</h1>
 						<p class="lead"></p>
-						<pre><small>The requested resource is no longer available at the server and no
-forwarding address is known. This condition is expected to be
-considered permanent. Clients with link editing capabilities SHOULD
-delete references to the Request-URI after user approval. If the
-server does not know, or has no facility to determine, whether or not
-the condition is permanent, the status code 404 (Not Found) SHOULD be
-used instead. This response is cacheable unless indicated otherwise.
+						<pre><small>
+   The requested resource is no longer available at the server and no
+   forwarding address is known. This condition is expected to be
+   considered permanent. Clients with link editing capabilities SHOULD
+   delete references to the Request-URI after user approval. If the
+   server does not know, or has no facility to determine, whether or not
+   the condition is permanent, the status code 404 (Not Found) SHOULD be
+   used instead. This response is cacheable unless indicated otherwise.
 
-The 410 response is primarily intended to assist the task of web
-maintenance by notifying the recipient that the resource is
-intentionally unavailable and that the server owners desire that
-remote links to that resource be removed. Such an event is common for
-limited-time, promotional services and for resources belonging to
-individuals no longer working at the server's site. It is not
-necessary to mark all permanently unavailable resources as "gone" or
-to keep the mark for any length of time -- that is left to the
-discretion of the server owner.</small></pre>
+   The 410 response is primarily intended to assist the task of web
+   maintenance by notifying the recipient that the resource is
+   intentionally unavailable and that the server owners desire that
+   remote links to that resource be removed. Such an event is common for
+   limited-time, promotional services and for resources belonging to
+   individuals no longer working at the server's site. It is not
+   necessary to mark all permanently unavailable resources as "gone" or
+   to keep the mark for any length of time -- that is left to the
+   discretion of the server owner.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -82,7 +84,7 @@ discretion of the server owner.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

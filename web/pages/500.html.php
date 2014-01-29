@@ -33,8 +33,10 @@
 					<div class="col-sm-7">
 						<h1>500: Internal Server Error</h1>
 						<p class="lead"></p>
-						<pre><small>The server encountered an unexpected condition which prevented it
-from fulfilling the request.</small></pre>
+						<pre><small>
+   The server encountered an unexpected condition which prevented it
+   from fulfilling the request.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -67,7 +69,7 @@ from fulfilling the request.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

@@ -33,14 +33,16 @@
 					<div class="col-sm-7">
 						<h1>100: Continue</h1>
 						<p class="lead"></p>
-						<pre><small>The client SHOULD continue with its request. This interim response is
-used to inform the client that the initial part of the request has
-been received and has not yet been rejected by the server. The client
-SHOULD continue by sending the remainder of the request or, if the
-request has already been completed, ignore this response. The server
-MUST send a final response after the request has been completed. See
-section 8.2.3 for detailed discussion of the use and handling of this
-status code.</small></pre>
+						<pre><small>
+   The client SHOULD continue with its request. This interim response is
+   used to inform the client that the initial part of the request has
+   been received and has not yet been rejected by the server. The client
+   SHOULD continue by sending the remainder of the request or, if the
+   request has already been completed, ignore this response. The server
+   MUST send a final response after the request has been completed. See
+   section 8.2.3 for detailed discussion of the use and handling of this
+   status code.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -73,7 +75,7 @@ status code.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

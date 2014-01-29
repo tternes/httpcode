@@ -33,14 +33,16 @@
 					<div class="col-sm-7">
 						<h1>413: Request Entity Too Large</h1>
 						<p class="lead"></p>
-						<pre><small>The server is refusing to process a request because the request
-entity is larger than the server is willing or able to process. The
-server MAY close the connection to prevent the client from continuing
-the request.
+						<pre><small>
+   The server is refusing to process a request because the request
+   entity is larger than the server is willing or able to process. The
+   server MAY close the connection to prevent the client from continuing
+   the request.
 
-If the condition is temporary, the server SHOULD include a Retry-
-After header field to indicate that it is temporary and after what
-time the client MAY try again.</small></pre>
+   If the condition is temporary, the server SHOULD include a Retry-
+   After header field to indicate that it is temporary and after what
+   time the client MAY try again.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -73,7 +75,7 @@ time the client MAY try again.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

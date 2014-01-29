@@ -33,20 +33,22 @@
 					<div class="col-sm-7">
 						<h1>202: Accepted</h1>
 						<p class="lead"></p>
-						<pre><small>The request has been accepted for processing, but the processing has
-not been completed.  The request might or might not eventually be
-acted upon, as it might be disallowed when processing actually takes
-place. There is no facility for re-sending a status code from an
-asynchronous operation such as this.
+						<pre><small>
+   The request has been accepted for processing, but the processing has
+   not been completed.  The request might or might not eventually be
+   acted upon, as it might be disallowed when processing actually takes
+   place. There is no facility for re-sending a status code from an
+   asynchronous operation such as this.
 
-The 202 response is intentionally non-committal. Its purpose is to
-allow a server to accept a request for some other process (perhaps a
-batch-oriented process that is only run once per day) without
-requiring that the user agent's connection to the server persist
-until the process is completed. The entity returned with this
-response SHOULD include an indication of the request's current status
-and either a pointer to a status monitor or some estimate of when the
-user can expect the request to be fulfilled.</small></pre>
+   The 202 response is intentionally non-committal. Its purpose is to
+   allow a server to accept a request for some other process (perhaps a
+   batch-oriented process that is only run once per day) without
+   requiring that the user agent's connection to the server persist
+   until the process is completed. The entity returned with this
+   response SHOULD include an indication of the request's current status
+   and either a pointer to a status monitor or some estimate of when the
+   user can expect the request to be fulfilled.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -79,7 +81,7 @@ user can expect the request to be fulfilled.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

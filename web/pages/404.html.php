@@ -33,14 +33,16 @@
 					<div class="col-sm-7">
 						<h1>404: Not Found</h1>
 						<p class="lead"></p>
-						<pre><small>The server has not found anything matching the Request-URI. No
-indication is given of whether the condition is temporary or
-permanent. The 410 (Gone) status code SHOULD be used if the server
-knows, through some internally configurable mechanism, that an old
-resource is permanently unavailable and has no forwarding address.
-This status code is commonly used when the server does not wish to
-reveal exactly why the request has been refused, or when no other
-response is applicable.</small></pre>
+						<pre><small>
+   The server has not found anything matching the Request-URI. No
+   indication is given of whether the condition is temporary or
+   permanent. The 410 (Gone) status code SHOULD be used if the server
+   knows, through some internally configurable mechanism, that an old
+   resource is permanently unavailable and has no forwarding address.
+   This status code is commonly used when the server does not wish to
+   reveal exactly why the request has been refused, or when no other
+   response is applicable.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -73,7 +75,7 @@ response is applicable.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

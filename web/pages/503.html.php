@@ -33,15 +33,17 @@
 					<div class="col-sm-7">
 						<h1>503: Service Unavailable</h1>
 						<p class="lead"></p>
-						<pre><small>The server is currently unable to handle the request due to a
-temporary overloading or maintenance of the server. The implication
-is that this is a temporary condition which will be alleviated after
-some delay. If known, the length of the delay MAY be indicated in a
-Retry-After header. If no Retry-After is given, the client SHOULD
-handle the response as it would for a 500 response.
-Note: The existence of the 503 status code does not imply that a
-server must use it when becoming overloaded. Some servers may wish
-to simply refuse the connection.</small></pre>
+						<pre><small>
+   The server is currently unable to handle the request due to a
+   temporary overloading or maintenance of the server. The implication
+   is that this is a temporary condition which will be alleviated after
+   some delay. If known, the length of the delay MAY be indicated in a
+   Retry-After header. If no Retry-After is given, the client SHOULD
+   handle the response as it would for a 500 response.
+      Note: The existence of the 503 status code does not imply that a
+      server must use it when becoming overloaded. Some servers may wish
+      to simply refuse the connection.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -74,7 +76,7 @@ to simply refuse the connection.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

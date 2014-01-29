@@ -33,13 +33,15 @@
 					<div class="col-sm-7">
 						<h1>403: Forbidden</h1>
 						<p class="lead"></p>
-						<pre><small>The server understood the request, but is refusing to fulfill it.
-Authorization will not help and the request SHOULD NOT be repeated.
-If the request method was not HEAD and the server wishes to make
-public why the request has not been fulfilled, it SHOULD describe the
-reason for the refusal in the entity.  If the server does not wish to
-make this information available to the client, the status code 404
-(Not Found) can be used instead.</small></pre>
+						<pre><small>
+   The server understood the request, but is refusing to fulfill it.
+   Authorization will not help and the request SHOULD NOT be repeated.
+   If the request method was not HEAD and the server wishes to make
+   public why the request has not been fulfilled, it SHOULD describe the
+   reason for the refusal in the entity.  If the server does not wish to
+   make this information available to the client, the status code 404
+   (Not Found) can be used instead.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -72,7 +74,7 @@ make this information available to the client, the status code 404
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

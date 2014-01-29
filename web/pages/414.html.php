@@ -33,15 +33,17 @@
 					<div class="col-sm-7">
 						<h1>414: Request-URI Too Long</h1>
 						<p class="lead"></p>
-						<pre><small>The server is refusing to service the request because the Request-URI
-is longer than the server is willing to interpret. This rare
-condition is only likely to occur when a client has improperly
-converted a POST request to a GET request with long query
-information, when the client has descended into a URI "black hole" of
-redirection (e.g., a redirected URI prefix that points to a suffix of
-itself), or when the server is under attack by a client attempting to
-exploit security holes present in some servers using fixed-length
-buffers for reading or manipulating the Request-URI.</small></pre>
+						<pre><small>
+   The server is refusing to service the request because the Request-URI
+   is longer than the server is willing to interpret. This rare
+   condition is only likely to occur when a client has improperly
+   converted a POST request to a GET request with long query
+   information, when the client has descended into a URI "black hole" of
+   redirection (e.g., a redirected URI prefix that points to a suffix of
+   itself), or when the server is under attack by a client attempting to
+   exploit security holes present in some servers using fixed-length
+   buffers for reading or manipulating the Request-URI.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -74,7 +76,7 @@ buffers for reading or manipulating the Request-URI.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

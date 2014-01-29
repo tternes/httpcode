@@ -33,10 +33,12 @@
 					<div class="col-sm-7">
 						<h1>501: Not Implemented</h1>
 						<p class="lead"></p>
-						<pre><small>The server does not support the functionality required to fulfill the
-request. This is the appropriate response when the server does not
-recognize the request method and is not capable of supporting it for
-any resource.</small></pre>
+						<pre><small>
+   The server does not support the functionality required to fulfill the
+   request. This is the appropriate response when the server does not
+   recognize the request method and is not capable of supporting it for
+   any resource.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -69,7 +71,7 @@ any resource.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

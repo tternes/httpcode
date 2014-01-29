@@ -33,9 +33,11 @@
 					<div class="col-sm-7">
 						<h1>502: Bad Gateway</h1>
 						<p class="lead"></p>
-						<pre><small>The server, while acting as a gateway or proxy, received an invalid
-response from the upstream server it accessed in attempting to
-fulfill the request.</small></pre>
+						<pre><small>
+   The server, while acting as a gateway or proxy, received an invalid
+   response from the upstream server it accessed in attempting to
+   fulfill the request.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -68,7 +70,7 @@ fulfill the request.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

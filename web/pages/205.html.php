@@ -33,12 +33,14 @@
 					<div class="col-sm-7">
 						<h1>205: Reset Content</h1>
 						<p class="lead"></p>
-						<pre><small>The server has fulfilled the request and the user agent SHOULD reset
-the document view which caused the request to be sent. This response
-is primarily intended to allow input for actions to take place via
-user input, followed by a clearing of the form in which the input is
-given so that the user can easily initiate another input action. The
-response MUST NOT include an entity.</small></pre>
+						<pre><small>
+   The server has fulfilled the request and the user agent SHOULD reset
+   the document view which caused the request to be sent. This response
+   is primarily intended to allow input for actions to take place via
+   user input, followed by a clearing of the form in which the input is
+   given so that the user can easily initiate another input action. The
+   response MUST NOT include an entity.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -71,7 +73,7 @@ response MUST NOT include an entity.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

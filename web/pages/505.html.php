@@ -33,13 +33,15 @@
 					<div class="col-sm-7">
 						<h1>505: HTTP Version Not Supported</h1>
 						<p class="lead"></p>
-						<pre><small>The server does not support, or refuses to support, the HTTP protocol
-version that was used in the request message. The server is
-indicating that it is unable or unwilling to complete the request
-using the same major version as the client, as described in section
-3.1, other than with this error message. The response SHOULD contain
-an entity describing why that version is not supported and what other
-protocols are supported by that server.</small></pre>
+						<pre><small>
+   The server does not support, or refuses to support, the HTTP protocol
+   version that was used in the request message. The server is
+   indicating that it is unable or unwilling to complete the request
+   using the same major version as the client, as described in section
+   3.1, other than with this error message. The response SHOULD contain
+   an entity describing why that version is not supported and what other
+   protocols are supported by that server.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -72,7 +74,7 @@ protocols are supported by that server.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

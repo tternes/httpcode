@@ -33,14 +33,16 @@
 					<div class="col-sm-7">
 						<h1>203: Non-Authoritative Information</h1>
 						<p class="lead"></p>
-						<pre><small>The returned metainformation in the entity-header is not the
-definitive set as available from the origin server, but is gathered
-from a local or a third-party copy. The set presented MAY be a subset
-or superset of the original version. For example, including local
-annotation information about the resource might result in a superset
-of the metainformation known by the origin server. Use of this
-response code is not required and is only appropriate when the
-response would otherwise be 200 (OK).</small></pre>
+						<pre><small>
+   The returned metainformation in the entity-header is not the
+   definitive set as available from the origin server, but is gathered
+   from a local or a third-party copy. The set presented MAY be a subset
+   or superset of the original version. For example, including local
+   annotation information about the resource might result in a superset
+   of the metainformation known by the origin server. Use of this
+   response code is not required and is only appropriate when the
+   response would otherwise be 200 (OK).
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -73,7 +75,7 @@ response would otherwise be 200 (OK).</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

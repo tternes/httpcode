@@ -33,21 +33,23 @@
 					<div class="col-sm-7">
 						<h1>204: No Content</h1>
 						<p class="lead"></p>
-						<pre><small>The server has fulfilled the request but does not need to return an
-entity-body, and might want to return updated metainformation. The
-response MAY include new or updated metainformation in the form of
-entity-headers, which if present SHOULD be associated with the
-requested variant.
+						<pre><small>
+   The server has fulfilled the request but does not need to return an
+   entity-body, and might want to return updated metainformation. The
+   response MAY include new or updated metainformation in the form of
+   entity-headers, which if present SHOULD be associated with the
+   requested variant.
 
-If the client is a user agent, it SHOULD NOT change its document view
-from that which caused the request to be sent. This response is
-primarily intended to allow input for actions to take place without
-causing a change to the user agent's active document view, although
-any new or updated metainformation SHOULD be applied to the document
-currently in the user agent's active view.
+   If the client is a user agent, it SHOULD NOT change its document view
+   from that which caused the request to be sent. This response is
+   primarily intended to allow input for actions to take place without
+   causing a change to the user agent's active document view, although
+   any new or updated metainformation SHOULD be applied to the document
+   currently in the user agent's active view.
 
-The 204 response MUST NOT include a message-body, and thus is always
-terminated by the first empty line after the header fields.</small></pre>
+   The 204 response MUST NOT include a message-body, and thus is always
+   terminated by the first empty line after the header fields.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -80,7 +82,7 @@ terminated by the first empty line after the header fields.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

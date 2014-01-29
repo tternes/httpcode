@@ -33,12 +33,14 @@
 					<div class="col-sm-7">
 						<h1>504: Gateway Timeout</h1>
 						<p class="lead"></p>
-						<pre><small>The server, while acting as a gateway or proxy, did not receive a
-timely response from the upstream server specified by the URI (e.g.
-HTTP, FTP, LDAP) or some other auxiliary server (e.g. DNS) it needed
-to access in attempting to complete the request.
-Note: Note to implementors: some deployed proxies are known to
-return 400 or 500 when DNS lookups time out.</small></pre>
+						<pre><small>
+   The server, while acting as a gateway or proxy, did not receive a
+   timely response from the upstream server specified by the URI (e.g.
+   HTTP, FTP, LDAP) or some other auxiliary server (e.g. DNS) it needed
+   to access in attempting to complete the request.
+      Note: Note to implementors: some deployed proxies are known to
+      return 400 or 500 when DNS lookups time out.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -71,7 +73,7 @@ return 400 or 500 when DNS lookups time out.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

@@ -33,11 +33,13 @@
 					<div class="col-sm-7">
 						<h1>412: Precondition Failed</h1>
 						<p class="lead"></p>
-						<pre><small>The precondition given in one or more of the request-header fields
-evaluated to false when it was tested on the server. This response
-code allows the client to place preconditions on the current resource
-metainformation (header field data) and thus prevent the requested
-method from being applied to a resource other than the one intended.</small></pre>
+						<pre><small>
+   The precondition given in one or more of the request-header fields
+   evaluated to false when it was tested on the server. This response
+   code allows the client to place preconditions on the current resource
+   metainformation (header field data) and thus prevent the requested
+   method from being applied to a resource other than the one intended.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -70,7 +72,7 @@ method from being applied to a resource other than the one intended.</small></pr
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

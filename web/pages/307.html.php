@@ -33,24 +33,26 @@
 					<div class="col-sm-7">
 						<h1>307: Temporary Redirect</h1>
 						<p class="lead"></p>
-						<pre><small>The requested resource resides temporarily under a different URI.
-Since the redirection MAY be altered on occasion, the client SHOULD
-continue to use the Request-URI for future requests.  This response
-is only cacheable if indicated by a Cache-Control or Expires header
-field.
+						<pre><small>
+   The requested resource resides temporarily under a different URI.
+   Since the redirection MAY be altered on occasion, the client SHOULD
+   continue to use the Request-URI for future requests.  This response
+   is only cacheable if indicated by a Cache-Control or Expires header
+   field.
 
-The temporary URI SHOULD be given by the Location field in the
-response. Unless the request method was HEAD, the entity of the
-response SHOULD contain a short hypertext note with a hyperlink to
-the new URI(s) , since many pre-HTTP/1.1 user agents do not
-understand the 307 status. Therefore, the note SHOULD contain the
-information necessary for a user to repeat the original request on
-the new URI.
+   The temporary URI SHOULD be given by the Location field in the
+   response. Unless the request method was HEAD, the entity of the
+   response SHOULD contain a short hypertext note with a hyperlink to
+   the new URI(s) , since many pre-HTTP/1.1 user agents do not
+   understand the 307 status. Therefore, the note SHOULD contain the
+   information necessary for a user to repeat the original request on
+   the new URI.
 
-If the 307 status code is received in response to a request other
-than GET or HEAD, the user agent MUST NOT automatically redirect the
-request unless it can be confirmed by the user, since this might
-change the conditions under which the request was issued.</small></pre>
+   If the 307 status code is received in response to a request other
+   than GET or HEAD, the user agent MUST NOT automatically redirect the
+   request unless it can be confirmed by the user, since this might
+   change the conditions under which the request was issued.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -83,7 +85,7 @@ change the conditions under which the request was issued.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

@@ -33,10 +33,12 @@
 					<div class="col-sm-7">
 						<h1>405: Method Not Allowed</h1>
 						<p class="lead"></p>
-						<pre><small>The method specified in the Request-Line is not allowed for the
-resource identified by the Request-URI. The response MUST include an
-Allow header containing a list of valid methods for the requested
-resource.</small></pre>
+						<pre><small>
+   The method specified in the Request-Line is not allowed for the
+   resource identified by the Request-URI. The response MUST include an
+   Allow header containing a list of valid methods for the requested
+   resource.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -69,7 +71,7 @@ resource.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

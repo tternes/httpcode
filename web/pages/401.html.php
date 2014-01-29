@@ -33,19 +33,21 @@
 					<div class="col-sm-7">
 						<h1>401: Unauthorized</h1>
 						<p class="lead"></p>
-						<pre><small>The request requires user authentication. The response MUST include a
-WWW-Authenticate header field (section 14.47) containing a challenge
-applicable to the requested resource. The client MAY repeat the
-request with a suitable Authorization header field (section 14.8). If
-the request already included Authorization credentials, then the 401
-response indicates that authorization has been refused for those
-credentials. If the 401 response contains the same challenge as the
-prior response, and the user agent has already attempted
-authentication at least once, then the user SHOULD be presented the
-entity that was given in the response, since that entity might
-include relevant diagnostic information. HTTP access authentication
-is explained in "HTTP Authentication: Basic and Digest Access
-Authentication" [43].</small></pre>
+						<pre><small>
+   The request requires user authentication. The response MUST include a
+   WWW-Authenticate header field (section 14.47) containing a challenge
+   applicable to the requested resource. The client MAY repeat the
+   request with a suitable Authorization header field (section 14.8). If
+   the request already included Authorization credentials, then the 401
+   response indicates that authorization has been refused for those
+   credentials. If the 401 response contains the same challenge as the
+   prior response, and the user agent has already attempted
+   authentication at least once, then the user SHOULD be presented the
+   entity that was given in the response, since that entity might
+   include relevant diagnostic information. HTTP access authentication
+   is explained in "HTTP Authentication: Basic and Digest Access
+   Authentication" [43].
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -78,7 +80,7 @@ Authentication" [43].</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>

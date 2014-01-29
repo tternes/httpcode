@@ -33,19 +33,21 @@
 					<div class="col-sm-7">
 						<h1>416: Requested Range Not Satisfiable</h1>
 						<p class="lead"></p>
-						<pre><small>A server SHOULD return a response with this status code if a request
-included a Range request-header field (section 14.35), and none of
-the range-specifier values in this field overlap the current extent
-of the selected resource, and the request did not include an If-Range
-request-header field. (For byte-ranges, this means that the first-
-byte-pos of all of the byte-range-spec values were greater than the
-current length of the selected resource.)
+						<pre><small>
+   A server SHOULD return a response with this status code if a request
+   included a Range request-header field (section 14.35), and none of
+   the range-specifier values in this field overlap the current extent
+   of the selected resource, and the request did not include an If-Range
+   request-header field. (For byte-ranges, this means that the first-
+   byte-pos of all of the byte-range-spec values were greater than the
+   current length of the selected resource.)
 
-When this status code is returned for a byte-range request, the
-response SHOULD include a Content-Range entity-header field
-specifying the current length of the selected resource (see section
-14.16). This response MUST NOT use the multipart/byteranges content-
-type.</small></pre>
+   When this status code is returned for a byte-range request, the
+   response SHOULD include a Content-Range entity-header field
+   specifying the current length of the selected resource (see section
+   14.16). This response MUST NOT use the multipart/byteranges content-
+   type.
+</small></pre>
 					</div>
 					
 					<!-- sidebar helpers -->
@@ -78,7 +80,7 @@ type.</small></pre>
 		</div>
 		<div class="row">
 			<div class="col-sm-10">
-				<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 			</div>
 		</div>
 	</body>
