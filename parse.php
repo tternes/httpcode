@@ -2,70 +2,77 @@
 
 $pageTemplate = "";
 loadHtmlTemplate();
-parseRfcHtmlDocument("rfc2616-sec10.html");
+
+$files = array(
+	"rfc2616-sec10.html",
+	"rfc-additions.html"
+);
+parseRfcHtmlDocuments($files);
+
 
 // -------------------------------------------------------------------------
 
-function parseRfcHtmlDocument($filename)
+function parseRfcHtmlDocuments($files)
 {
-	$dom = new DOMDocument;
-	$dom->loadHTMLFile($filename);
-
-	// Just look for the <h3> elements, and then their peers
 	$statuses = array();
-	$items = $dom->getElementsByTagName('h3');
-	for ($i = 0; $i < $items->length; $i++)
+	foreach($files as $filename)
 	{
-		$explanation = "";
+		$dom = new DOMDocument;
+		$dom->loadHTMLFile($filename);
+
+		// Just look for the <h3> elements, and then their peers
+		$items = $dom->getElementsByTagName('h3');
+		for ($i = 0; $i < $items->length; $i++)
+		{
+			$explanation = "";
 		
-		list($major, $minor, $rev, $status, $description) = sscanf($items->item($i)->nodeValue, "%d.%d.%d %d %[^$]s");
+			list($major, $minor, $rev, $status, $description) = sscanf($items->item($i)->nodeValue, "%d.%d.%d %d %[^$]s");
 
-		// If we fail to parse, it's probably a section thing
-		if($status == 0)
-		{
-			// TODO: could actually make a section feature for this
-			// 10.1 Informational 1xx
-			// 10.2 Successful 2xx
-			// 10.3 Redirection 3xx
-			// 10.4 Client Error 4xx
-			// 10.5 Server Error 5xx
-			//print("" . $items->item($i)->nodeValue . "\n");
-			continue;
-		}
-
-		$p = $items->item($i)->nextSibling;
-		while($p != null)
-		{
-			if(strlen($p->nodeValue) > 1)
+			// If we fail to parse, it's probably a section thing
+			if($status == 0)
 			{
-				// TODO: consider capturing the document as-is ("<p>...</p>", instead of text value)
-				$explanation .= $p->nodeValue;
+				// TODO: could actually make a section feature for this
+				// 10.1 Informational 1xx
+				// 10.2 Successful 2xx
+				// 10.3 Redirection 3xx
+				// 10.4 Client Error 4xx
+				// 10.5 Server Error 5xx
+				//print("" . $items->item($i)->nodeValue . "\n");
+				continue;
 			}
-			$p = $p->nextSibling;
 
-			// HACK: if the next node is the same as the original sibling (h3), bail
-			if($p->nodeName == $items->item($i)->nodeName)
-				$p = null;
-		}
+			$p = $items->item($i)->nextSibling;
+			while($p != null)
+			{
+				if(strlen($p->nodeValue) > 1)
+				{
+					// TODO: consider capturing the document as-is ("<p>...</p>", instead of text value)
+					$explanation .= $p->nodeValue;
+				}
+				$p = $p->nextSibling;
+
+				// HACK: if the next node is the same as the original sibling (h3), bail
+				if($p->nodeName == $items->item($i)->nodeName)
+					$p = null;
+			}
 	
-		// tidy things up - removed for now, causes formatting issues on 200
-		// $explanation = str_replace("   ", "", $explanation);
+			// tidy things up - removed for now, causes formatting issues on 200
+			// $explanation = str_replace("   ", "", $explanation);
 		
-		$result = array("status" => $status, "description" => trim($description), "explanation" => $explanation);
-		$statuses[] = $result;
+			$result = array("status" => $status, "description" => trim($description), "explanation" => $explanation);
+			$statuses[] = $result;
+		}
 	}
 
 	foreach($statuses as $status)
 	{
-		// JSON/dictionary object
-	
 		// Write the full page, including template/header
 		generateHtmlPage($status);
-	
+
 		// Write the cURL version page
 		generateCurlPage($status);
 	}
-	
+
 	generateLimonadeRoutes($statuses);
 }
 
