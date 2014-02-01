@@ -45,13 +45,13 @@
 						<p>Add this snippet to your shell&apos;s .rc file:<pre>function http(){
     curl http://httpcode.info/$1;
 }</pre>Then run: <pre>~$ http 303</pre></p>
-						<p><img src="https://files.app.net/bnqsvCuN" width="617" height="405"></p>
+						<p><img src="docs/httpcode_terminal.png" width="617" height="405"></p>
 						<hr>
 
 						<h4>Alfred</h4>
 						<p><a href="http://alpha.app.net/ffried">Florian Friedrich</a> built a nice 
 							<a href="https://alpha.app.net/ffried/post/10635789">Alfred workflow</a> for Mac users.</p>
-						<p><img src="https://files.app.net/pjkwpSWX" width="672" height="190"></p>
+						<p><img src="docs/httpcode_alfred.png" width="672" height="190"></p>
 						<hr>
 						
 						<h2>Open Source</h2>
@@ -63,8 +63,8 @@
 			</div>
 			
 			<div class="row">
-				<div class="col-lg-10">
-					<p class="text-muted">Copyright (c) 2014 Thaddeus Ternes. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
+				<div class="col-sm-10">
+					<p class="text-muted">Copyright (c) 2014 <a href="http://www.bluetoo.co">Thaddeus Ternes</a>. Powered by the <a href="http://bootswatch.com/yeti/">Yeti</a> theme.</p>
 				</div>
 			</div>
 		</div>
