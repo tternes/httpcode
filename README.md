@@ -35,7 +35,7 @@ to generate new content in `web/pages`.
 
 ## Sponsor ##
 
-Thanks for [Runscope](http://www.runscope.com) for sponsoring the site. Be sure to check out their [200: OK](https://www.runscope.com/ts) promo.
+Thanks to [Runscope](http://www.runscope.com) for sponsoring the site. Be sure to check out their [200: OK](https://www.runscope.com/ts) promo.
 
 ## Hosting ##
 
