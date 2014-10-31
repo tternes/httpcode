@@ -4,6 +4,7 @@ $pageTemplate = "";
 loadHtmlTemplate();
 
 $files = array(
+	"rfc4918-manual.html",
 	"rfc2616-sec10.html",
 	"rfc-additions.html"
 );

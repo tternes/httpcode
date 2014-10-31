@@ -1,0 +1,79 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head><title>HTTP/1.1: Status Code Definitions</title></head>
+<body>
+
+<!-- http://tools.ietf.org/html/rfc4918#section-11.2 -->
+<!-- https://github.com/tternes/httpcode/issues/3 -->
+<!-- hand-modified to match the format of existing files -->
+<h3>11.1.0  207 Multi-Status</h3>
+<p>
+   The 207 (Multi-Status) status code provides status for multiple
+   independent operations (see Section 13 for more information).
+</p>
+
+<h3>11.2.0 422 Unprocessable Entity</h3>
+<p>
+
+   The 422 (Unprocessable Entity) status code means the server
+   understands the content type of the request entity (hence a
+   415(Unsupported Media Type) status code is inappropriate), and the
+   syntax of the request entity is correct (thus a 400 (Bad Request)
+   status code is inappropriate) but was unable to process the contained
+   instructions.  For example, this error condition may occur if an XML
+   request body contains well-formed (i.e., syntactically correct), but
+   semantically erroneous, XML instructions.
+</p>
+
+<h3>11.3.0 423 Locked</h3>
+<p>
+
+   The 423 (Locked) status code means the source or destination resource
+   of a method is locked.  This response SHOULD contain an appropriate
+   precondition or postcondition code, such as 'lock-token-submitted' or
+   'no-conflicting-lock'.
+</p>
+
+<h3>11.4.0  424 Failed Dependency</h3>
+<p>
+
+   The 424 (Failed Dependency) status code means that the method could
+   not be performed on the resource because the requested action
+   depended on another action and that action failed.  For example, if a
+   command in a PROPPATCH method fails, then, at minimum, the rest of
+   the commands will also fail with 424 (Failed Dependency).
+</p>
+
+<h3>11.5.0  507 Insufficient Storage</h3>
+<p>
+
+   The 507 (Insufficient Storage) status code means the method could not
+   be performed on the resource because the server is unable to store
+   the representation needed to successfully complete the request.  This
+   condition is considered to be temporary.  If the request that
+   received this status code was the result of a user action, the
+   request MUST NOT be repeated until it is requested by a separate user
+   action.
+</p>
+
+<h3>12.1.x  412 Precondition Failed</h3>
+<p>
+   Any request can contain a conditional header defined in HTTP (If-
+   Match, If-Modified-Since, etc.) or the "If" or "Overwrite"
+   conditional headers defined in this specification.  If the server
+   evaluates a conditional header, and if that condition fails to hold,
+   then this error code MUST be returned.  On the other hand, if the
+   client did not include a conditional header in the request, then the
+   server MUST NOT use this status code.
+</p>
+
+<h3>12.2.x  414 Request-URI Too Long</h3>
+<p>
+
+   This status code is used in HTTP 1.1 only for Request-URIs, not URIs
+   in other locations.
+</p>
+
+</body></html>
