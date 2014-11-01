@@ -27,7 +27,8 @@ graceful_shutdown()
 	kill -SIGTERM $PHP_PID
 
     echo Cleanup test files
-	for f in *.test; do
+	for f in *.test
+	do
 		rm $f
 	done
 }
@@ -57,26 +58,34 @@ do
 
 	#
 	# plain text (curl) pages
-	# curl pages should be less than 20 lines
-	curl -o - -s http://localhost:${PHP_PORT}/${status} | grep html | wc -l
+	# curl pages should be less than CURL_MAX_LENGTH lines
 	CURL_LINES=`curl -o - -s http://localhost:${PHP_PORT}/${status} | wc -l`
-	echo ${CURL_LINES}
 	if [ $CURL_LINES -gt ${CURL_MAX_LENGTH} ]; then
 		exit_with_error ${status} curl response was too large
 	fi
 
 	#
-	# specify a content type - agent should be ignored
-	#curl -o - -s -A "Mozilla/4.0" http://localhost:${PHP_PORT}/${status} | grep html
+	# browser requests - should validate as html document
+	# the CHECK_FOR_HTML_TAG comment should also exist once
+	OUTPUT=`uuidgen`.test
+	curl -o $OUTPUT -s -A "Mozilla/4.0" http://localhost:${PHP_PORT}/${status}
+	CHECK_FOR_HTML_TAG_COUNT=`cat ${OUTPUT} | grep CHECK_FOR_HTML_TAG | wc -l`
+	if [ $CHECK_FOR_HTML_TAG_COUNT -ne 1 ]; then
+		exit_with_error ${status} should have returned CHECK_FOR_HTML_TAG for browser test
+	fi
 
 	#
-	# browser requests - should validate as html document
-	OUTPUT=`uuidgen`.test
-	echo CURL to ${OUTPUT}
-	curl -o $OUTPUT -s -A "Mozilla/4.0" http://localhost:${PHP_PORT}/${status}
-	echo XMLLINT ${OUTPUT}
-	xmllint -html -noout ${OUTPUT}
-
+	# specify a content type - agent should be ignored
+	# in this case, curl should receive html, so dupe the previous test
+	# OUTPUT=`uuidgen`.test
+	# curl -o $OUTPUT -s -H "Content-Type:text/html" http://localhost:${PHP_PORT}/${status}
+	# CHECK_FOR_HTML_TAG_COUNT=`cat ${OUTPUT} | grep CHECK_FOR_HTML_TAG | wc -l`
+	# if [ $CHECK_FOR_HTML_TAG_COUNT -ne 1 ]; then
+	# 	cat ${OUTPUT}
+	# 	exit_with_error ${status} should have returned CHECK_FOR_HTML_TAG for user agent test
+	# fi
+	
 done
 
 echo "----------------------- TEST COMPLETE -----------------------"
+exit 0
