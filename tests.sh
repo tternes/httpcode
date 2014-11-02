@@ -77,13 +77,13 @@ do
 	#
 	# specify a content type - agent should be ignored
 	# in this case, curl should receive html, so dupe the previous test
-	# OUTPUT=`uuidgen`.test
-	# curl -o $OUTPUT -s -H "Content-Type:text/html" http://localhost:${PHP_PORT}/${status}
-	# CHECK_FOR_HTML_TAG_COUNT=`cat ${OUTPUT} | grep CHECK_FOR_HTML_TAG | wc -l`
-	# if [ $CHECK_FOR_HTML_TAG_COUNT -ne 1 ]; then
-	# 	cat ${OUTPUT}
-	# 	exit_with_error ${status} should have returned CHECK_FOR_HTML_TAG for user agent test
-	# fi
+	OUTPUT=`uuidgen`.test
+	curl -o $OUTPUT -s -H "Accept:text/html" http://localhost:${PHP_PORT}/${status}
+	CHECK_FOR_HTML_TAG_COUNT=`cat ${OUTPUT} | grep CHECK_FOR_HTML_TAG | wc -l`
+	if [ $CHECK_FOR_HTML_TAG_COUNT -ne 1 ]; then
+		cat ${OUTPUT}
+		exit_with_error ${status} should have returned CHECK_FOR_HTML_TAG for user agent test
+	fi
 	
 done
 
