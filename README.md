@@ -32,21 +32,16 @@ to generate new content in `web/pages`.
 
 [Extra statuses](http://httpcode.info/418) are included in the `rfc-additions.html` file. For simplicity, they conform to the same formatting style as the `rfc2616-sec10.html` file.
 
-
-## Sponsor ##
-
-Thanks to [Runscope](http://www.runscope.com) for sponsoring the site. Be sure to check out their [200: OK](https://www.runscope.com/ts) promo.
-
 ## Hosting ##
 
 I currently host the site at [httpcode.info](httpcode.info). If you appreciate the site, please consider checking out my [other software](http://www.bluetoo.co).
 
-## Licence ##
+## License ##
  
 
 	The MIT License (MIT)
 	
-	Copyright (c) 2014 Thaddeus Ternes
+	Copyright (c) 2014, 2015 Thaddeus Ternes
 	
 	Permission is hereby granted, free of charge, to any person obtaining a copy of
 	this software and associated documentation files (the "Software"), to deal in
